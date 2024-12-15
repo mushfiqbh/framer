@@ -17,8 +17,10 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+
 .navbar {
   padding: 20px;
+  padding-bottom: 0;
 }
 
 h1 {
@@ -28,6 +30,7 @@ h1 {
   font-size: 2em; /* Increase heading size */
   margin-bottom: 10px; /* Add some space below the heading */
 }
+
 
 nav {
     margin-top: 40px;
@@ -42,7 +45,7 @@ nav a {
   border: 1px solid tomato;
   display: inline-block;
   padding: 10px;
-  margin: 5px;
+  margin: 2px;
   text-decoration: none;
   padding: 5px 10px; /* Add some padding for better click target */
   border-radius: 3px; /* Rounded corners for menu items */
@@ -53,7 +56,7 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 #redirect {
@@ -73,12 +76,14 @@ nav a:hover {
 }
 
 .iframe-container {
-  margin-top: 20px;
+  background-color: #f6c2c2;
+  display: flex;
 }
 
 iframe {
-  width: 100%;
+  width: 95%;
   height: 1000px;
+  border: none;
 }
 
 #myBtn {
