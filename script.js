@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (event) {
       event.preventDefault(); // Prevent the default anchor click behavior
       const url = this.getAttribute("data-url");
+      iframe.setAttribute("src", url); 
       redirectLink.setAttribute("href", url);
       links.forEach((link) => {
         link.classList.remove("active");
       });
       link.setAttribute("class", "active");
-      iframe.src = url; // Set the iframe source to the clicked link's URL
     });
   });
 });
