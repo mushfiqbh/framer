@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single Page Website with Iframe</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DS Codes in iFrame</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Welcome to My Website</h1>
+      <div class="navbar">
+        <h1 onclick="topFunction()">Data Structure Codes</h1>
         <nav>
-            <ul>
-                <li><a href="#" data-url="https://codefile.io/f/vTsuiMt5x5">Matrix Multiplication</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/40j1lJ4EPo">Binary Tree</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/cAEcdXGYhi">Doubly Linked List</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/1G02WU0bV6">Circular Linked List</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/UZSKoAhUeA">Stack Queue Using Array</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/GLJC2Maveq">Stack Queue Using Linked List</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/5JlaWdCrt1">Infix To Postfix</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/fMcX0yHY6f">Quick Sort</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/JsejtHTqHn">Tower of Hanoi</a></li>
-                <li><a href="#" data-url="https://codefile.io/f/dEXvpCqzbq">Factorial-Fibonacci</a></li>
-
-            </ul>
+          <a href="#" data-url="https://codefile.io/f/vTsuiMt5x5"
+            >Matrix Multiplication</a
+          >
+          <a href="#" data-url="https://codefile.io/f/40j1lJ4EPo"
+            >Binary Tree</a
+          >
+          <a href="#" data-url="https://codefile.io/f/cAEcdXGYhi"
+            >Doubly Linked List</a
+          >
+          <a href="#" data-url="https://codefile.io/f/1G02WU0bV6"
+            >Circular Linked List</a
+          >
+          <a href="#" data-url="https://codefile.io/f/UZSKoAhUeA"
+            >Stack Queue Using Array</a
+          >
+          <a href="#" data-url="https://codefile.io/f/GLJC2Maveq"
+            >Stack Queue Using Linked List</a
+          >
+          <a href="#" data-url="https://codefile.io/f/5JlaWdCrt1"
+            >Infix To Postfix</a
+          >
+          <a href="#" data-url="https://codefile.io/f/fMcX0yHY6f">Quick Sort</a>
+          <a href="#" data-url="https://codefile.io/f/JsejtHTqHn"
+            >Tower of Hanoi</a
+          >
+          <a href="#" data-url="https://codefile.io/f/dEXvpCqzbq"
+            >Factorial-Fibonacci</a
+          >
         </nav>
-        <div class="iframe-container">
-            <iframe id="contentFrame" src="" frameborder="0" allowfullscreen></iframe>
+        <div class="button_container">
+          <a href="#" id="redirect" target="_blank"
+            >Open Link
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0 0 30 30"
+            >
+              <path
+                d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"
+              ></path>
+            </svg>
+          </a>
         </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios-filled/50/circled-up-2.png"
+          alt="circled-up-2"
+        />
+      </button>
+      <div class="iframe-container">
+        <iframe
+          id="contentFrame"
+          src=""
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="footer"><br/><br/>&copy; <script>document.write(new Date().getFullYear());</script> Developed by Mushfiq R.</p>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
